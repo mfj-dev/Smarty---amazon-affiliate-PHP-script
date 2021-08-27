@@ -1,0 +1,48 @@
+h1, h2, h3 {
+    color: #4F86F7;
+}
+
+#headings {
+    background: #4F86F7;
+}
+
+#side-page span a:hover {
+    color: #4F86F7;
+    text-decoration: underline;
+}
+
+.button {
+    background: #4F86F7;
+}
+
+#nav, #mobile-nav {
+    background: #4F86F7;
+}
+
+#mobile-nav-link {
+    background: #587ecd;
+}
+
+#mobile-subnav-link {
+    background: #3a6acc !important;
+}
+
+ul#topnav li:hover {
+    background: #3a6acc;
+}
+
+ul#topnav li span {
+    background: #3a6acc;
+}
+
+.short-review-box h3 {
+    color: #4F86F7;
+}
+
+span.blog-date {
+    color: #4F86F7;
+}
+
+#blog-wrapper a {
+    color: #4F86F7;
+}

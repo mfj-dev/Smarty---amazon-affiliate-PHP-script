@@ -1,0 +1,40 @@
+h1, h2, h3 {
+    color: #CD9575;
+}
+
+#headings {
+    background: #CD9575;
+}
+
+#side-page span a:hover {
+    color: #CD9575;
+    text-decoration: underline;
+}
+
+.button {
+    background: #CD9575;
+}
+
+#nav {
+    background: #CD9575;
+}
+
+ul#topnav li:hover {
+    background: #8d6148;
+}
+
+ul#topnav li span {
+    background: #8d6148;
+}
+
+.short-review-box h3 {
+    color: #CD9575;
+}
+
+span.blog-date {
+    color: #CD9575;
+}
+
+#blog-wrapper a {
+    color: #CD9575;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Smarty Documentation Help</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Smarty&rdquo; Documentation by &ldquo;Branko83&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Smarty - Amazon affiliate PHP script&rdquo;</h1>
+		
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 02/01/2015<br>
+					By: Branko Matovic<br>
+					Email: <a href="mailto:brankomatovic83@gmail.com">brankomatovic83@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/Branko83">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+		    <li><a href="#htmlStructure">Important: instalation of Smarty</a></li>
+		    <li><a href="#htmlStructure">Configuration of MYSQL database and PHP code</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#admin">Admin</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>	
+		</ol>
+		
+		<hr>
+		<h3 id="htmlStructure"><strong>Important: instalation of Smarty</strong> - <a href="#toc">top</a></h3>
+		<p>In your local server you must create folder smarty in your www folder and extract all files there. If you upload website to your domain (ex:www.example.com) you must find table website_fronted in your sql db and left row website_frontend_directory blank to work properly.</p>
+		<h3 id="htmlStructure"><strong>A) Configuration of MYSQL database and PHP code</strong> - <a href="#toc">top</a></h3>
+		<p><strong>How to install your MYSQL database:</strong></p>
+		<ol>
+		<li>
+		Create new database in PHPMYADMIN at your host. Call it 'smarty'. 
+		</li>
+		<li>
+		In the MYSQL folder there is sql.sql file that should be imported to your database 'smarty'.
+	    </li>
+		<li>
+		In the includes folder there is connection.inc.php file. You must configure there your database options, name, host, username and password which should be complement with data in phpmyadmin.
+     	Connection.inc file should be like in the image bellow.	
+	    </li>		
+		</ol>
+		<img src="assets/images/config.png" alt="HTML Structure" />
+		<br>
+		<p><strong>Word about PHP code:</strong></p>
+		<p>PHP code is widely used in script, especially in connecting with MYSQL database. Code is commented, and properly sorted, and can be easily understand. Also security is special matter. So PDO statement is used to prevent hackers attacks, Mysql injections, and there is also xss-security.php in security folder to prevent xss script attacks.
+		<br>
+		You can add, edit and delete content and website options in your admin panel so there isn't so much need to change php codes inside script, but if have php knowledge you can do it by yourself.
+		</p>
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive layout with two columns. It' divided into 4 part. Header with id="header", horizontal navigation (which is located in includes/navigation.php file for desktop and includes/mobile-navigation.php for mobile devices).<br>
+		Third part is content area (id="content"), which consist from breadcrumbs (id="crumbs"), left column (id="two-third-column") and right, smaller column (id="one-third-column"). Left, main column 
+		is place where is located your main content, last products reviews (id="short-review-box"), blogs, contact and privacy information depending of page.
+		<br>
+		Footer is fourth part of website and html code is located in includes/footer.php
+		</p>
+		
+		<img src="assets/images/html1.jpg" alt="HTML Structure" />
+		
+		<p>If you would like to edit the css, font, or style of any elements in one of these columns, you would change it in css/main.css. 
+		<br>
+		<strong>Admin part </strong> of script is located in admin folder and there are main files where php code for admin features is located. Admin css can be change in css folder of the website.
+		<br>
+		In admin folder is also located CKE editor that is used by our script for textarea of admin panel.  
+		</p>	
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		<p>In css folder there are 3 main css files:</p>
+		<ul>
+		<li>main.css</li>
+		<li>admin.css</li>
+		<li>reset.css</li>
+		</ul>
+       <p>There are also 2 css folders, color_css, and font_css where font and color styles of the script are located. You can change it, edit it and add new styles here.
+	   <br>
+	   
+	   </p>
+	   
+
+		<hr>
+		
+		<h3 id="admin"><strong>D) Admin structure</strong> - <a href="#toc">top</a></h3>
+		<p>Admin area of script is most important area. Here you can control content of your website by creating, editing and deleting products, categories and brands as well as blog articles. You can also control basic website options.
+		<br>
+		There is an info icon to the right side of every input at every admin page where there is short explanation of input purpose. Read it carefully and avoid any misunderstading. 
+		</p>
+		<p>Main links in admin area are:</p>
+		<ul>
+		<li>Site options</li>
+        <li>Navigation links</li>
+        <li>Products</li>
+        <li>Categories</li>
+        <li>Brands</li>
+        <li>Blog articles</li>
+        <li>Logout</li>
+        <li>Website</li>
+		</ul>
+		
+		<hr>
+		
+
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+		Every image at the demo file is bought and properly licensed. At the main file there isn't any images which could be in conflict with someone copyright rights. Also there isn't any bought scripts or codes. All codes are made by myself personally. 
+		</p>
+		
+	
+		
+		<hr>
+		
+
+		
+		<p class="append-bottom alt large"><strong>Regards,
+		<br>
+		Branko Matovic</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

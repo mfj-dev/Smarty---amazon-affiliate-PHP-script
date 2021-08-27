@@ -1,0 +1,80 @@
+body {
+    font-family: Calibri;
+}
+
+input, textarea {
+    font-family: Calibri;
+}
+
+h3 {
+    font-weight: normal !important;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#side-page span {
+    font-size: 14px;
+}
+
+.short-review-box h3 {
+    font-size: 14px !Important;
+}
+
+span.blog-date {
+    font-size: 13px;
+}
+
+#headings h2 {
+    font-size: 20px !Important;
+}
+
+#content h1 {
+    font-size: 24px !Important;
+}
+
+#content p, li {
+    font-size: 15px;
+}
+
+ul#topnav li a {
+    font-size: 17px;
+}
+
+ul#topnav li span a {
+    font-size: 14px;
+}
+
+span#small-navigation {
+    font-size: 18px;
+}
+
+#mobile-nav-link ul li a {
+    font-size: 16px;
+}
+
+#mobile-subnav-link ul li a {
+    font-size: 14px;
+}
+
+.button {
+    font-size: 14px;
+    font-family: Calibri;
+}
+
+#blog-wrapper h2 {
+    font-size: 24px !Important;
+}
+
+span.small-blog-date {
+    font-size: 12px !important;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
+blockquote {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+} 

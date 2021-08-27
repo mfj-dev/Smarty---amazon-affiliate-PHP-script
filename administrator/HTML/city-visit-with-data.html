@@ -1,0 +1,45 @@
+  <?php
+   $rest_visitorcitycount=$countvisits-$first_visitorcitycount-$second_visitorcitycount-$third_visitorcitycount-$fourth_visitorcitycount-$fifth_visitorcitycount;
+   $rest_visitorcitypercent=($rest_visitorcitycount/$countvisits)*100;
+  ?>
+  <div class="content canvas-data">
+  <div class="container">
+	 <h5>
+   Total visit by cities (%)
+   </h5>
+  
+      		<div style="width: 100%">
+			<canvas id="canvas4"></canvas>
+		</div>
+
+
+	<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["<?php echo $first_visitors_city; ?>,<?php echo $first_visitors_countrycode;?>","<?php echo $second_visitors_city; ?>,<?php echo $second_visitors_countrycode;?>","<?php echo $third_visitors_city; ?>,<?php echo $third_visitors_countrycode;?>","<?php echo $fourth_visitors_city; ?>,<?php echo $fourth_visitors_countrycode;?>","<?php echo $fifth_visitors_city; ?>,<?php echo $fifth_visitors_countrycode;?>","Rest"],
+		datasets : [
+			{
+				fillColor : "rgba(224,0,0,0.5)",
+				strokeColor : "rgba(224,0,0,0.8)",
+				highlightFill: "rgba(224,0,0,0.75)",
+				highlightStroke: "rgba(224,0,0,1)",
+				data : [<?php echo number_format($first_visitorcitypercent,2); ?>,<?php echo number_format($second_visitorcitypercent,2); ?>,
+				<?php echo number_format($third_visitorcitypercent,2); ?>,<?php echo number_format($fourth_visitorcitypercent,2); ?>,
+				<?php echo number_format($fifth_visitorcitypercent,2); ?>,<?php echo number_format($rest_visitorcitypercent,2); ?>]
+			}
+					]
+
+	}
+
+		var ctx = document.getElementById("canvas4").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	
+	</script>
+
+   
+	<div class="clearfix"></div>
+ </div>
+ </div>

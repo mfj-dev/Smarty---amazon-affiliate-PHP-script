@@ -1,0 +1,80 @@
+body {
+    font-family: Palatino Linotype;
+}
+
+input, textarea {
+    font-family: Palatino Linotype;
+}
+
+h3 {
+    font-weight: normal !important;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#side-page span {
+    font-size: 13px;
+}
+
+.short-review-box h3 {
+    font-size: 14px !Important;
+}
+
+span.blog-date {
+    font-size: 13px;
+}
+
+#headings h2 {
+    font-size: 20px !Important;
+}
+
+#content h1 {
+    font-size: 22px !Important;
+}
+
+#content p, li {
+    font-size: 14px;
+}
+
+ul#topnav li a {
+    font-size: 16px;
+}
+
+ul#topnav li span a {
+    font-size: 13px;
+}
+
+span#small-navigation {
+    font-size: 17px;
+}
+
+#mobile-nav-link ul li a {
+    font-size: 15px;
+}
+
+#mobile-subnav-link ul li a {
+    font-size: 13px;
+}
+
+.button {
+    font-size: 14px;
+    font-family: Palatino Linotype;
+}
+
+#blog-wrapper h2 {
+    font-size: 22px !Important;
+}
+
+span.small-blog-date {
+    font-size: 12px !important;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
+blockquote {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+} 

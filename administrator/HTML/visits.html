@@ -1,0 +1,255 @@
+<!--  HTML CODE FOR COUNT WEBSITE VISITS --------------- START -->
+<div id="count-visits">
+    <div class="one-quarter-column">
+  
+        <!-- Total visits code --------------- START -->
+        <div class="content">
+		  <div class="container">
+            <div class="one-third-column">
+                <span class="glyphicon glyphicon-signal content-icon blue">
+                </span>
+            </div>
+            <div class="two-third-column">
+                <h5>
+                    Total (visits/unique visits)
+                </h5>
+               <div class="clearfix"></div>
+                <span class="stats">
+                <span class="total-visits">
+                </span>
+                 /
+                <span class="total-unique-visits">
+                </span>
+               <script>
+               // Animate the element's value from x to y:
+               $({someValue1: 0}).animate({someValue1: <?php echo $countvisits; ?>}, {
+               duration: 2500,
+               easing:'swing', // can be anything
+               step: function() { // called on every step
+               // Update the element's text with rounded-up value:
+               $('.total-visits').text(commaSeparateNumber(Math.round(this.someValue1)));
+               }
+               });
+
+               function commaSeparateNumber(val){
+               while (/(\d+)(\d{3})/.test(val.toString())){
+               val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+               }
+               return val;
+               }
+               // Animate the element's value from x to y:
+               $({someValue2: 0}).animate({someValue2: <?php echo $countuniquevisits; ?>}, {
+               duration: 2500,
+               easing:'swing', // can be anything
+               step: function() { // called on every step
+               // Update the element's text with rounded-up value:
+               $('.total-unique-visits').text(commaSeparateNumber(Math.round(this.someValue2)));
+               }
+            });
+
+               function commaSeparateNumber(val){
+               while (/(\d+)(\d{3})/.test(val.toString())){
+               val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+             }
+               return val;
+             }
+              </script>
+              </span>
+             </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Total visits code --------------- END -->
+    </div>
+    </div>
+    <div class="one-quarter-column">
+        <!-- Monthly visits code --------------- START -->
+        <div class="content">
+		<div class="container">
+            <div class="one-third-column">
+   <span class="glyphicon glyphicon-signal content-icon violet">
+   </span>
+            </div>
+            <div class="two-third-column">
+                <h5>
+                    Monthly (visits/unique visits)
+                </h5>
+
+                <div class="clearfix"></div>
+   <span class="stats">
+    <span class="monthly-visits">
+   </span>
+   /
+    <span class="monthly-unique-visits">
+   </span>
+    <script>
+       // Animate the element's value from x to y:
+  $({someValue3: 0}).animate({someValue3: <?php echo $monthlycountvisits; ?>}, {
+      duration: 2000,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.monthly-visits').text(commaSeparateNumber(Math.round(this.someValue3)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+           // Animate the element's value from x to y:
+  $({someValue4: 0}).animate({someValue4: <?php echo $monthlycountuniquevisits; ?>}, {
+      duration: 2000,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.monthly-unique-visits').text(commaSeparateNumber(Math.round(this.someValue4)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+    </script>
+   </span>
+            </div>
+			</div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Monthly visits code --------------- END -->
+
+    </div>
+    <div class="one-quarter-column">
+
+        <!-- Weekly visits code --------------- START -->
+        <div class="content">
+		<div class="container">
+            <div class="one-third-column">
+   <span class="glyphicon glyphicon-signal content-icon green">
+   </span>
+            </div>
+            <div class="two-third-column">
+                <h5>
+                    Weekly (visits/unique visits)
+                </h5>
+
+                <div class="clearfix"></div>
+   <span class="stats">
+    <span class="weekly-visits">
+   </span>
+   /
+    <span class="weekly-unique-visits">
+   </span>
+    <script>
+       // Animate the element's value from x to y:
+  $({someValue5: 0}).animate({someValue5: <?php echo $weeklycountvisits; ?>}, {
+      duration: 1500,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.weekly-visits').text(commaSeparateNumber(Math.round(this.someValue5)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+           // Animate the element's value from x to y:
+  $({someValue6: 0}).animate({someValue6: <?php echo $weeklycountuniquevisits; ?>}, {
+      duration: 1500,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.weekly-unique-visits').text(commaSeparateNumber(Math.round(this.someValue6)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+    </script>
+		
+   </span>
+            </div>
+			</div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Weekly visits code --------------- END -->
+
+    </div>
+    <div class="one-quarter-column">
+
+        <!-- Daily visits code --------------- START -->
+        <div class="content">
+		<div class="container">
+            <div class="one-third-column">
+   <span class="glyphicon glyphicon-signal content-icon orange">
+   </span>
+            </div>
+            <div class="two-third-column">
+                <h5>
+                    Daily (visits/unique visits)
+                </h5>
+
+                <div class="clearfix"></div>
+   <span class="stats">
+     <span class="daily-visits">
+   </span>
+   /
+    <span class="daily-unique-visits">
+   </span>
+    <script>
+       // Animate the element's value from x to y:
+  $({someValue: 0}).animate({someValue: <?php echo $dailycountvisits; ?>}, {
+      duration: 1000,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.daily-visits').text(commaSeparateNumber(Math.round(this.someValue)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+           // Animate the element's value from x to y:
+  $({someValue: 0}).animate({someValue: <?php echo $dailycountuniquevisits; ?>}, {
+      duration: 1000,
+      easing:'swing', // can be anything
+      step: function() { // called on every step
+          // Update the element's text with rounded-up value:
+          $('.daily-unique-visits').text(commaSeparateNumber(Math.round(this.someValue)));
+      }
+  });
+
+ function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
+    </script>
+   </span>
+            </div>
+			</div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Daily visits code --------------- START -->
+
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- HTML CODE FOR COUNT WEBSITE VISITS --------------- END -->
